@@ -12,30 +12,39 @@
     <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min2.css" />
     <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
 </head>
-<body style="overflow-x: hidden;">
+<body style="overflow-x: hidden; 
+             margin: 0px;
+             font-family: 'Helvetica Neue,Helvetica,Arial,sans-serif;';
+             font-size: 14px;
+             line-height: 1.42857143;
+             color: #333;">
         <div>
             <div>
                 <!-- Begin Banner -->
                 <div>
-                    <header class="" style="background-color: #2c343b; 
-                                            height: 70px; 
+                    <header class="" style="background-color: #2c343b;
+                                            height: 133px; 
                                             color: white; 
                                             padding: 5px; 
                                             padding-left:15px;
                                             padding-right:15px;
                                             text-align: left; 
                                             margin-top: -100px;">
-                        <h1 style="color:#daa520; 
-                                   background-image: url('../../images/protesto.png');
-                                   background-repeat:no-repeat;">&nbsp;&nbsp;&nbsp;Portal do Consumidor</h1>
+                        <a href="#" >
+                        <img  src="~/images/logo_teste.png" width="450" height="80" 
+                                                            style="margin-left:100px; 
+                                                                   margin-top: 20px;"/></a>
+                        <a><img  src="~/images/PC.png"             width="250" height="80" 
+                                                            style="margin-left:400px; 
+                                                                   margin-top: 10px;"/></a>
                     </header>
                 </div>
             </div>
             <!-- End Banner -->
 
             <!-- Begin NavBar -->
-            <div class="nav">
-                <input type="checkbox" id="nav-check">
+            <div class="nav" style="background-color:#fff;">
+                @*<input type="checkbox" id="nav-check">
                 <div class="nav-header">
                     <div class="nav-title">
                        
@@ -47,7 +56,7 @@
                         <span></span>
                         <span></span>
                     </label>
-                </div>
+                </div>*@
 
                 <div class="nav-links">
                     <ul>
@@ -114,20 +123,22 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-inner">
-                            <div class="carousel-item active" style="background-image:url('../../images/img_snowtops.jpg')">
+                            <div class="carousel-item active" style="background-image:url('../../images/consumidor1.jpg')">
                             </div>
-                            <div class="carousel-item" style="background-image:url('../../images/mountain2.jpg')">
+                            <div class="carousel-item" style="background-image:url('../../images/consumidor2.jpg')">
                             </div>
-                            <div class="carousel-item" style="background-image:url('../../images/uefa.jpg')">
+                            <div class="carousel-item" style="background-image:url('../../images/consumidor3.jpg')">
+                            </div>
+                            <div class="carousel-item" style="background-image:url('../../images/consumidor4.jpg')">
                             </div>
                         </div>
                     </div>
 
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="height:350px;margin-top:5px;">
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="height:300px;margin-top:25px;">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="height:350px;margin-top:5px;">
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="height:300px;margin-top:25px;">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -145,62 +156,86 @@
             </div>
 
         <!-- Begin footer -->
-        <footer class="myfooter navbar-bottom" style="background-color:black;
-                                                            text-align:justify;
-                                                            padding-top:5px;">
-            <div class="row" style="margin-left:50px;">
-                <div class="col-md-4">
-                    <h4 style="color:#D4A017;
-                               text-align:justify;
-                               font-size:medium;
-                               margin-left:20px;">
-                        Sobre Nós
-                    </h4>
-                    <p style="text-align:justify;
-                              padding:5px;
-                              color:white;
-                              font-size:medium;
-                              margin-left: 20px;">
-                        O RD Station Marketing é a melhor ferramenta para automação de Marketing Digital tudo-em-um para sua empresa.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h4 style="color:#D4A017;
-                                text-align:justify;
-                                margin-left:20px;">
-                        Links Úteis
-                    </h4>
-                    <ul>
-                        <li><a href="#" style="text-decoration:none;">Developement</a></li>
-                        <li><a href="#" style="text-decoration:none;">Designer</a></li>
-                        <li><a href="#" style="text-decoration:none;">Manager</a></li>
-                        @*<li><a href="#">Data Bases</a></li>
-                        <li><a href="#">Networking</a></li>*@
+            
+        <footer class="myfooter navbar-bottom" style="text-align:justify;
+                                                            padding-top:50px;
+                                                            height:260px;">
+               <div class="row" style="margin-left:50px;">
+                <div class="col-sm-3">
+                    <h3 class="footer-widget-title" style="font-family: Roboto Condensed;
+                                                           font-size: 17px;
+                                                           color: #a8a8a8;
+                                                           font-weight: 500;
+                                                           text-transform: uppercase;">LINKS RÁPIDOS</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="/Upload/Documentos/Gabinete_Governador/Lei_organica.pdf"  style="text-decoration:none;
+                                                                                               color:#FFFFFF; transition: all .25s ease;
+                                                                                               font-family: Roboto Condensed;
+                                                                                               font-size: 14px;
+                                                                                               line-height: 1.75em;">Lei Orgânica do Banco Central</a></li>
+                        <li><a href="/upload/NAP/Dr_n.9.92.pdf" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Lei de Instituições Financeiras</a></li>
+                        <li><a href="/Upload/Lei_Cambial.pdf" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Lei Câmbial de S.Tomé e Príncipe</a></li>
+                        <li><a href="/Instituicoes-Financeiras-Detalhes?cod=BAN" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Bancos Comerciais</a></li>
+                        <li><a href="/Instituicoes-Financeiras-Detalhes?cod=SEG" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Empresas de Seguro</a></li>
+                        <li><a href="/Legislacoes-e-Normas" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;" >Normas de Aplicação Permanente (NAP)</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h4 style="color:#D4A017;
-                               text-align:justify;
-                               margin-left:20px;">
-                        Contactos
-                    </h4>
-                    <ul>
-                        <li><a href="#" style="text-decoration:none;">Facebook</a></li>
-                        <li><a href="#" style="text-decoration:none;">Whatsapp</a></li>
-                        <li><a href="#" style="text-decoration:none;">Instagran</a></li>
-                        @*<li><a href="#">Youtube</a></li>
-                        <li><a href="#">LinkeDin</a></li>
-                        <li><a href="#">E-mail us</a></li>*@
+                <div class="col-sm-3">
+                    <h3 class="footer-widget-title" style="font-family: Roboto Condensed;
+                                                           font-size: 17px;
+                                                           color: #a8a8a8;
+                                                           font-weight: 500;
+                                                           text-transform: uppercase;">OUTROS LINKS</h3>
+                    <ul class="list-unstyled ">
+                        <li><a href="https://www.bcplp.org/pt-PT/Paginas/PaginaInicial.aspx" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Bancos Centrais CPLP</a></li>
+                        <li><a href="http://www.afdb.org/en/" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Banco Africano de Desenvolvimento</a></li>
+                        <li><a href="http://www.worldbank.org/" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Banco Mundial</a></li>
+                        <li><a href="https://www.bcplp.org/pt-PT/Paginas/PaginaInicial.aspx" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Portal dos Bancos Centrais da CPLP</a></li>
+                        <li><a href="http://www.imf.org/external/index.htm" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Fundo Monetário Internacional</a></li>
+                        <li><a href="http://www.min-financas.st/index.php/pt/" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Ministério das Finanças e Administração Pública</a></li>
                     </ul>
+                 </div>
+                   <div class="col-sm-3">
+                       <style> .footer-widget-title a:hover{
+     color:red;
+ }</style>
+                       <h3 class="footer-widget-title" style="font-family: Roboto Condensed;
+                                                           font-size: 17px;
+                                                           color: #a8a8a8;
+                                                           font-weight: 500;
+                                                           text-transform: uppercase;">ATENDIMENTO E RECLAMAÇÕES</h3>
+                       <ul class="list-unstyled ">
+                           <li><a href="/Banco-Central?x=nOZQcukXrfCzBSX7Xc3odA==&amp;&amp;z=4jr8pJAunGWrld1iEMvPfA==" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Caderno de Educação Financeira</a></li>
+                           <li><a href="/Reclamacoes" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Ficha de Reclamação</a></li>
+                       </ul>
+                   </div>
+                   <div class="col-sm-3">
+                       <h3 class="footer-widget-title" style="font-family: Roboto Condensed;
+                                                           font-size: 17px;
+                                                           color: #a8a8a8;
+                                                           font-weight: 500;
+                                                           text-transform: uppercase;">RELATÓRIOS</h3>
+                       <ul class="list-unstyled ">
+                           <li><a href="/Banco-Central-STome-Principe?y=er3XsfhwD%2Bbaw7zrGqewmQ==" style="color: #FFFFFF;
+                                                                                                    text-decoration: none;
+                                                                                                    transition: all .25s ease;
+                                                                                                    font-family: Roboto Condensed;">Boletins Estatísticos Economicos</a></li>
+
+                           <li><a href="/Banco-Central-STome-Principe?y=pwDonccsFFyTxv1%2b3AKbZw%3d%3d" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Relatórios Anuais do Banco Central</a></li>
+                           <li><a href="/Banco-Central-STome-Principe?y=aSBJBPuYFJtD8Y95HcozdA==" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Boletim Mensal</a></li>
+                           <li><a href="/Banco-Central-STome-Principe?y=xl/HxAP4DCs6THGZd2Tu1A==" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Relatórios de Conta Anuais do Banco Central</a></li>
+                           <li><a href="/Banco-Central-STome-Principe?y=V5lT5m1UK8ZHY0bSnTWncg==" style="text-decoration:none;color:#FFFFFF;font-family: Roboto Condensed;">Relatórios de Conta Auditoria Externa</a></li>
+                       </ul>
+                   </div>
                 </div>
-            </div>
            
-            <div class="subfooter" style="background-color:#D4A017;
-                                          color:white;
+            <div class="subfooter" style="color:white;
                                           text-align:center;
-                                          padding:5px;
-                                          font-weight:bold;">
-                <span>Portal do Consumidor - © 2022. Todos os direitos reservados.</span>
+                                          margin-top:18px;
+                                          font-weight:bold;
+                                          height:55px;">
+                <span>© 2022 - Portal do Consumidor.</span>
+                <span>Todos os direitos reservados.</span>
             </div>
         </footer>
         <!-- End footer-->
@@ -230,7 +265,7 @@
           slideIndex++;
           if (slideIndex > x.length) {slideIndex = 1}
           x[slideIndex-1].style.display = "block";
-          setTimeout(carousel, 6000);
+          setTimeout(carousel, 4000);
         }
         }
    </script>
